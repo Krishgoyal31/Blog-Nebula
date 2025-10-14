@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Nebula - Unleash Your Voice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="landing.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Blog Nebula</a></div>
+            <ul class="nav-links">
+                <li><a href="explore.html" class="nav-link">Explore</a></li>
+                <li><a href="create.html" class="nav-link">Create</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
+                    <i class="fas fa-moon light-icon"></i>
+                    <i class="fas fa-sun dark-icon"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary">Sign In</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="landing-page">
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-tagline">Unleash Your Voice. Inspire the World.</h1>
+                <p class="hero-subtitle">Dive into a universe of stories, ideas, and creativity. Your next masterpiece awaits.</p>
+                <a href="create.html" class="btn btn-primary hero-cta">
+                    Start Writing
+                    <svg class="cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-image-overlay"></div>
+        </section>
+
+        <section class="trending-posts-section">
+            <h2 class="section-title">Trending Posts</h2>
+            <div class="post-grid">
+                <a href="reader.html" class="post-card glassmorphism-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1593720219276-0b1e44167e21?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Future of AI" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>The Future of AI in Creative Writing</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=1" alt="Author Avatar" class="author-avatar">
+                            Jane Doe <span class="separator">•</span> Tech <span class="separator">•</span> 5 min read
+                        </p>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1520690022370-983086b4f74d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Minimalist Design" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>Mastering Minimalist Design Principles</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=2" alt="Author Avatar" class="author-avatar">
+                            John Smith <span class="separator">•</span> Design <span class="separator">•</span> 8 min read
+                        </p>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=2890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exploring the Cosmos" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>Exploring the Cosmos: A Beginner's Guide</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=3" alt="Author Avatar" class="author-avatar">
+                            Alice Wonderland <span class="separator">•</span> Science <span class="separator">•</span> 12 min read
+                        </p>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Healthy Habits for Digital Nomads" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>Healthy Habits for Digital Nomads</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=4" alt="Author Avatar" class="author-avatar">
+                            Bob Johnson <span class="separator">•</span> Lifestyle <span class="separator">•</span> 7 min read
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="start-writing-section">
+            <div class="start-writing-content glassmorphism-card">
+                <h2>Ready to Share Your Story?</h2>
+                <p>Join a vibrant community of writers and readers. Your unique perspective is valued here.</p>
+                <a href="create.html" class="btn btn-secondary">
+                    Create Your First Post
+                    <svg class="cta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 5v14M5 12h14"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+    <script src="landing.js"></script>
+</body>
+</html>
