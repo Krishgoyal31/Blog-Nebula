@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore - Blog Nebula</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="explore.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Blog Nebula</a></div>
+            <ul class="nav-links">
+                <li><a href="explore.html" class="nav-link active">Explore</a></li>
+                <li><a href="create.html" class="nav-link">Create</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
+                    <i class="fas fa-moon light-icon"></i>
+                    <i class="fas fa-sun dark-icon"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary">Sign In</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="explore-page-main">
+        <div class="explore-header glassmorphism-card">
+            <h1 class="page-title">Discover New Horizons</h1>
+            <p class="page-subtitle">A curated feed of inspiring stories and insightful articles.</p>
+            <div class="tag-filter-container">
+                <button class="tag-button active">All</button>
+                <button class="tag-button">Technology</button>
+                <button class="tag-button">Design</button>
+                <button class="tag-button">Science</button>
+                <button class="tag-button">Lifestyle</button>
+                <button class="tag-button">Art</button>
+                <button class="tag-button">Travel</button>
+                <button class="tag-button">Food</button>
+            </div>
+        </div>
+
+        <div class="explore-content">
+            <div class="post-masonry-grid">
+                <!-- Example Post Cards -->
+                <a href="reader.html" class="post-card glassmorphism-card explore-card reveal-on-scroll">
+                    <img src="https://m.media-amazon.com/images/I/61-+9bbz95L._UF1000,1000_QL80_.jpg" alt="The Art of Procrastination" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>The Art of Procrastination: A Deep Dive</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=5" alt="Author Avatar" class="author-avatar">
+                            Charlie Brown <span class="separator">•</span> Lifestyle <span class="separator">•</span> 6 min read
+                        </p>
+                        <p class="post-excerpt">Exploring the psychological underpinnings of delaying tasks and how to overcome it...</p>
+                        <div class="read-more-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card explore-card reveal-on-scroll">
+                    <img src="https://m.media-amazon.com/images/I/81P-Ws6ReEL._UF1000,1000_QL80_.jpg" alt="Quantum Computing" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>Quantum Computing: A Layman's Introduction</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=6" alt="Author Avatar" class="author-avatar">
+                            Dr. Evil <span class="separator">•</span> Science <span class="separator">•</span> 15 min read
+                        </p>
+                        <p class="post-excerpt">Demystifying the complex world of quantum mechanics and its computational implications...</p>
+                        <div class="read-more-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card explore-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1542831371-d145e1281483?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="UX Trends" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>10 UX Trends Shaping Digital Experiences</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=7" alt="Author Avatar" class="author-avatar">
+                            Grace Hopper <span class="separator">•</span> Design <span class="separator">•</span> 9 min read
+                        </p>
+                        <p class="post-excerpt">From micro-interactions to dark mode, a look at what's next in user experience design...</p>
+                        <div class="read-more-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card explore-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1596706859570-fd11322d7168?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sustainable Living" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>Sustainable Living: Small Changes, Big Impact</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=8" alt="Author Avatar" class="author-avatar">
+                            Eco Warrior <span class="separator">•</span> Environment <span class="separator">•</span> 7 min read
+                        </p>
+                        <p class="post-excerpt">Practical tips for reducing your carbon footprint in everyday life...</p>
+                        <div class="read-more-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card explore-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1522252234503-e11a8e6fae85?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Serverless Architectures" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>The Rise of Serverless Architectures</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=9" alt="Author Avatar" class="author-avatar">
+                            Code Master <span class="separator">•</span> Technology <span class="separator">•</span> 11 min read
+                        </p>
+                        <p class="post-excerpt">How cloud functions are revolutionizing backend development...</p>
+                        <div class="read-more-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card explore-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1552083974-bc8173427357?q=80&w=2870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mindfulness Meditation" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>Mindfulness Meditation for Beginners</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=10" alt="Author Avatar" class="author-avatar">
+                            Zen Guru <span class="separator">•</span> Wellness <span class="separator">•</span> 5 min read
+                        </p>
+                        <p class="post-excerpt">Start your journey to inner peace with these simple techniques...</p>
+                        <div class="read-more-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card explore-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1515286200277-2275727b14d5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="History of Coffee Beans" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>The Secret History of Coffee Beans</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=11" alt="Author Avatar" class="author-avatar">
+                            Coffee Connoisseur <span class="separator">•</span> Food <span class="separator">•</span> 8 min read
+                        </p>
+                        <p class="post-excerpt">From ancient Ethiopia to your morning cup, a fascinating journey...</p>
+                        <div class="read-more-btn">Read More</div>
+                    </div>
+                </a>
+                <a href="reader.html" class="post-card glassmorphism-card explore-card reveal-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ba6f06fd8?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Exploring the Highlands" class="post-thumbnail">
+                    <div class="post-info">
+                        <h3>Exploring the Highlands: A Photo Essay</h3>
+                        <p class="post-meta">
+                            <img src="https://i.pravatar.cc/30?img=12" alt="Author Avatar" class="author-avatar">
+                            Wanderlust <span class="separator">•</span> Travel <span class="separator">•</span> 10 min read
+                        </p>
+                        <p class="post-excerpt">Breathtaking landscapes and hidden gems from Scotland's wild north...</p>
+                        <div class="read-more-btn">Read More</div>
+                    </div>
+                </a>
+            </div>
+            <div class="suggested-topics glassmorphism-card">
+                <h2>Suggested Topics</h2>
+                <div class="suggested-tags">
+                    <span class="tag-pill">#ArtificialIntelligence</span>
+                    <span class="tag-pill">#FrontendDev</span>
+                    <span class="tag-pill">#HealthyEating</span>
+                    <span class="tag-pill">#SpaceExploration</span>
+                    <span class="tag-pill">#DigitalArt</span>
+                    <span class="tag-pill">#PersonalGrowth</span>
+                    <span class="tag-pill">#FutureTech</span>
+                    <span class="tag-pill">#RemoteWork</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+    <script src="explore.js"></script>
+</body>
+</html>
