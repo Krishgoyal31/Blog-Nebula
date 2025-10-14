@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Blog Nebula</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Blog Nebula</a></div>
+            <ul class="nav-links">
+                <li><a href="explore.html" class="nav-link">Explore</a></li>
+                <li><a href="create.html" class="nav-link">Create</a></li>
+                <li><a href="profile.html" class="nav-link active">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
+                    <i class="fas fa-moon light-icon"></i>
+                    <i class="fas fa-sun dark-icon"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary">Sign In</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="profile-page-main">
+        <div class="profile-header glassmorphism-card">
+            <img src="https://i.pravatar.cc/150?img=15" alt="User Avatar" class="profile-avatar">
+            <div class="user-info">
+                <h1 class="user-name">NovaWriter</h1>
+                <p class="user-bio">Passionate storyteller and tech enthusiast. Exploring the intersection of creativity and innovation. Always learning, always writing.</p>
+                <div class="profile-stats">
+                    <span><strong>124</strong> Posts</span>
+                    <span><strong>5.2K</strong> Followers</span>
+                    <span><strong>78</strong> Following</span>
+                </div>
+                <button class="btn btn-secondary edit-profile-btn"><i class="fas fa-user-edit"></i> Edit Profile</button>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <aside class="profile-sidebar glassmorphism-card">
+                <ul class="sidebar-nav">
+                    <li class="active" data-section="posts">
+                        <i class="fas fa-pencil-alt"></i> My Posts
+                    </li>
+                    <li data-section="stats">
+                        <i class="fas fa-chart-line"></i> Analytics
+                    </li>
+                    <li data-section="saved">
+                        <i class="fas fa-bookmark"></i> Saved Blogs
+                    </li>
+                    <li data-section="settings">
+                        <i class="fas fa-cog"></i> Settings
+                    </li>
+                </ul>
+            </aside>
+
+            <section class="profile-main-section glassmorphism-card">
+                <div id="posts-section" class="profile-section active">
+                    <h2>My Posts</h2>
+                    <div class="my-posts-grid">
+                        <!-- Example User Posts -->
+                        <a href="reader.html" class="post-card profile-post-card reveal-on-scroll">
+                            <img src="https://images.unsplash.com/photo-1620712948259-c852b7a3a933?q=80&w=2892&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web3" class="post-thumbnail">
+                            <div class="post-info">
+                                <h3>Building a Decentralized Future with Web3</h3>
+                                <p class="post-meta">
+                                    <span class="tag-pill">Technology</span> <span class="separator">•</span> 2 days ago
+                                </p>
+                            </div>
+                        </a>
+                        <a href="reader.html" class="post-card profile-post-card reveal-on-scroll">
+                            <img src="https://images.unsplash.com/photo-1549479905-f3c467a83d78?q=80&w=2890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="UI Design Color Psychology" class="post-thumbnail">
+                            <div class="post-info">
+                                <h3>The Psychology of Color in UI Design</h3>
+                                <p class="post-meta">
+                                    <span class="tag-pill">Design</span> <span class="separator">•</span> 1 week ago
+                                </p>
+                            </div>
+                        </a>
+                        <a href="reader.html" class="post-card profile-post-card reveal-on-scroll">
+                            <img src="https://images.unsplash.com/photo-1543694000-72c050a41d7e?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Minimalist Living" class="post-thumbnail">
+                            <div class="post-info">
+                                <h3>My Journey into Minimalist Living</h3>
+                                <p class="post-meta">
+                                    <span class="tag-pill">Lifestyle</span> <span class="separator">•</span> 2 weeks ago
+                                </p>
+                            </div>
+                        </a>
+                        <a href="reader.html" class="post-card profile-post-card reveal-on-scroll">
+                            <img src="https://images.unsplash.com/photo-1507676106000-8b1b26804595?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Astrophotography" class="post-thumbnail">
+                            <div class="post-info">
+                                <h3>A Guide to Astrophotography for Beginners</h3>
+                                <p class="post-meta">
+                                    <span class="tag-pill">Science</span> <span class="separator">•</span> 1 month ago
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="stats-section" class="profile-section">
+                    <h2>Personal Analytics</h2>
+                    <div class="analytics-grid">
+                        <div class="analytics-card glassmorphism-card-sm">
+                            <h3>Total Views</h3>
+                            <p class="stat-number">245,678</p>
+                            <span class="stat-trend trend-up">+12% last month</span>
+                        </div>
+                        <div class="analytics-card glassmorphism-card-sm">
+                            <h3>Total Reads</h3>
+                            <p class="stat-number">89,123</p>
+                            <span class="stat-trend trend-up">+8% last month</span>
+                        </div>
+                        <div class="analytics-card glassmorphism-card-sm">
+                            <h3>Followers</h3>
+                            <p class="stat-number">5,200</p>
+                            <span class="stat-trend trend-up">+500 new</span>
+                        </div>
+                        <div class="analytics-card glassmorphism-card-sm">
+                            <h3>Average Read Time</h3>
+                            <p class="stat-number">4 min 30 sec</p>
+                            <span class="stat-trend trend-neutral">Stable</span>
+                        </div>
+                    </div>
+                    <div class="chart-container glassmorphism-card-sm">
+                        <h3>Views Over Time</h3>
+                        <div class="chart-placeholder">
+                            <img src="https://quickchart.io/chart?c={type:%27line%27,data:{labels:[%27Jan%27,%27Feb%27,%27Mar%27,%27Apr%27,%27May%27,%27Jun%27],datasets:[{label:%27Views%27,data:[10000,12000,15000,11000,17000,19000],backgroundColor:%27rgba(135,206,250,0.2)%27,borderColor:%27rgb(135,206,250)%27,borderWidth:2,tension:0.3,fill:true}]}}" alt="Views Chart">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="saved-section" class="profile-section">
+                    <h2>Saved Blogs</h2>
+                    <div class="saved-posts-grid">
+                        <!-- Example Saved Posts -->
+                        <a href="reader.html" class="post-card profile-post-card reveal-on-scroll">
+                            <img src="https://images.unsplash.com/photo-1533591461413-eb04e0e5a87e?q=80&w=2870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Atomic Habits" class="post-thumbnail">
+                            <div class="post-info">
+                                <h3>The Power of Atomic Habits</h3>
+                                <p class="post-meta">
+                                    <img src="https://i.pravatar.cc/30?img=16" alt="Author Avatar" class="author-avatar">
+                                    James Clear <span class="separator">•</span> Productivity
+                                </p>
+                            </div>
+                        </a>
+                        <a href="reader.html" class="post-card profile-post-card reveal-on-scroll">
+                            <img src="https://images.unsplash.com/photo-1506729623666-c2269555139d?q=80&w=2882&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cryptography" class="post-thumbnail">
+                            <div class="post-info">
+                                <h3>Understanding Modern Cryptography</h3>
+                                <p class="post-meta">
+                                    <img src="https://i.pravatar.cc/30?img=17" alt="Author Avatar" class="author-avatar">
+                                    Alan Turing <span class="separator">•</span> Security
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="settings-section" class="profile-section">
+                    <h2>Settings</h2>
+                    <div class="setting-item">
+                        <label for="theme-select">App Theme:</label>
+                        <select id="theme-select" class="input-field">
+                            <option value="system">System Default</option>
+                            <option value="light">Light Mode</option>
+                            <option value="dark">Dark Mode</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label for="font-select">Default Font:</label>
+                        <select id="font-select" class="input-field">
+                            <option value="Inter">Inter</option>
+                            <option value="DM Sans">DM Sans</option>
+                            <option value="Satoshi">Satoshi (fallback to sans-serif)</option>
+                            <option value="Roboto">Roboto</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label for="bio-edit">Bio:</label>
+                        <textarea id="bio-edit" class="input-field" rows="4">Passionate storyteller and tech enthusiast. Exploring the intersection of creativity and innovation. Always learning, always writing.</textarea>
+                    </div>
+                    <button class="btn btn-primary"><i class="fas fa-save"></i> Save Changes</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
