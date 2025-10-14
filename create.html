@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post - Blog Nebula</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="create.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Blog Nebula</a></div>
+            <ul class="nav-links">
+                <li><a href="explore.html" class="nav-link">Explore</a></li>
+                <li><a href="create.html" class="nav-link active">Create</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
+                    <i class="fas fa-moon light-icon"></i>
+                    <i class="fas fa-sun dark-icon"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary">Sign In</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="create-page-main">
+        <h1 class="page-title">Create Your Masterpiece</h1>
+        <p class="page-subtitle">Craft your ideas using markdown, enrich with media, and share with the world.</p>
+
+        <div class="create-grid">
+            <div class="editor-panel glassmorphism-card">
+                <div class="editor-header">
+                    <input type="text" id="post-title" class="input-field" placeholder="Untitled Post">
+                    <div class="editor-toolbar">
+                        <button class="toolbar-button" data-format="bold" title="Bold (Ctrl+B)"><b>B</b></button>
+                        <button class="toolbar-button" data-format="italic" title="Italic (Ctrl+I)"><i>I</i></button>
+                        <button class="toolbar-button" data-format="heading" title="Heading (Ctrl+H)">H</button>
+                        <button class="toolbar-button" data-format="link" title="Link (Ctrl+K)">
+                            <i class="fas fa-link"></i>
+                        </button>
+                        <button class="toolbar-button" data-format="image" title="Image (Ctrl+G)">
+                            <i class="fas fa-image"></i>
+                        </button>
+                        <button class="toolbar-button" data-format="video" title="Embed Video">
+                            <i class="fas fa-video"></i>
+                        </button>
+                        <button class="toolbar-button" data-format="list" title="Unordered List">
+                            <i class="fas fa-list-ul"></i>
+                        </button>
+                    </div>
+                </div>
+                <textarea id="markdown-editor" placeholder="Start writing your story here... Supports Markdown!" class="markdown-editor"></textarea>
+                <div class="editor-footer">
+                    <div class="tag-selector">
+                        <label for="post-tags" class="input-label">Tags:</label>
+                        <input type="text" id="post-tags-input" class="input-field tag-input" placeholder="Add tags (e.g., tech, design, lifestyle)" list="suggested-tags">
+                        <datalist id="suggested-tags">
+                            <option value="Technology">
+                            <option value="Design">
+                            <option value="Science">
+                            <option value="Lifestyle">
+                            <option value="Art">
+                            <option value="Travel">
+                            <option value="Food">
+                        </datalist>
+                        <div id="selected-tags" class="selected-tags"></div>
+                    </div>
+                    <label for="cover-image-upload" class="btn btn-secondary upload-btn">
+                        <i class="fas fa-upload"></i> Upload Cover Image
+                        <input type="file" id="cover-image-upload" accept="image/*" style="display: none;">
+                    </label>
+                </div>
+            </div>
+
+            <div class="preview-panel glassmorphism-card">
+                <div class="preview-header">
+                    <h2>Live Preview</h2>
+                    <span id="reading-time">~ 1 min read</span>
+                </div>
+                <div id="live-preview" class="live-preview markdown-content">
+                    <h2 class="preview-placeholder">Your content will appear here...</h2>
+                </div>
+                <div class="publish-actions">
+                    <button class="btn btn-primary publish-btn"><i class="fas fa-paper-plane"></i> Publish Now</button>
+                    <button class="btn btn-secondary save-draft-btn"><i class="fas fa-save"></i> Save Draft</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+    <script src="create.js"></script>
+</body>
+</html>
