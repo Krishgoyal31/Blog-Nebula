@@ -1,0 +1,259 @@
+.explore-page-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.explore-header {
+    padding: 3rem 4rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.explore-header .page-title {
+    margin-bottom: 0.5em;
+    font-size: 3em;
+}
+
+.explore-header .page-subtitle {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+
+.tag-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1.5em;
+}
+
+.tag-button {
+    background: var(--tag-background);
+    color: var(--tag-text-color);
+    border: 1px solid var(--tag-background);
+    padding: 0.6em 1.2em;
+    border-radius: 25px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all var(--transition-duration);
+    font-family: var(--font-primary);
+}
+
+.tag-button:hover {
+    background: var(--accent-color);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 10px rgba(var(--link-hover-color-rgb, 106, 90, 205), 0.3);
+    transform: translateY(-2px);
+}
+
+.tag-button.active {
+    background: var(--accent-color);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(var(--link-hover-color-rgb, 106, 90, 205), 0.4);
+}
+
+.explore-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Masonry grid and sidebar */
+    gap: 40px;
+    align-items: start; /* Align content to the top */
+}
+
+.post-masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(min-content, max-content); /* Ensures items take up only necessary height */
+    gap: 30px;
+}
+
+.explore-card {
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Allow card to adjust height based on content */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.explore-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+body.dark-mode .explore-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+}
+
+.explore-card .post-thumbnail {
+    width: 100%;
+    height: 200px; /* Fixed height for thumbnails */
+    object-fit: cover;
+    border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+    transition: transform 0.3s ease;
+}
+
+.explore-card:hover .post-thumbnail {
+    transform: scale(1.03);
+}
+
+.explore-card .post-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.explore-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.5em;
+    line-height: 1.3;
+    color: var(--heading-text-color);
+}
+
+.explore-card .post-meta {
+    margin-top: 0.8em;
+    margin-bottom: 1em;
+    color: var(--placeholder-color);
+}
+
+.explore-card .post-excerpt {
+    font-size: 0.95em;
+    color: var(--body-text-color);
+    margin-bottom: 1.5em;
+    flex-grow: 1; /* Pushes "Read More" to bottom */
+}
+
+.explore-card .read-more-btn {
+    display: inline-block;
+    padding: 0.6em 1em;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-align: center;
+    transition: background var(--transition-duration), transform 0.2s ease;
+    align-self: flex-start; /* Align button to the left */
+}
+
+.explore-card .read-more-btn:hover {
+    background: var(--accent-color-hover);
+    transform: translateY(-2px);
+}
+
+.suggested-topics {
+    position: sticky; /* Keep this section in view */
+    top: 110px; /* Offset by navbar height */
+    padding: 2.5rem;
+    border-radius: var(--border-radius-lg);
+}
+
+.suggested-topics h2 {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    text-align: center;
+    color: var(--heading-text-color);
+}
+
+.suggested-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.suggested-tags .tag-pill {
+    padding: 0.7em 1.2em;
+    background: var(--tag-background);
+    color: var(--tag-text-color);
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--transition-duration);
+}
+
+.suggested-tags .tag-pill:hover {
+    background: var(--accent-color);
+    color: white;
+    box-shadow: 0 3px 10px rgba(var(--link-hover-color-rgb, 106, 90, 205), 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .explore-header {
+        padding: 2.5rem 2rem;
+    }
+    .explore-header .page-title {
+        font-size: 2.5em;
+    }
+    .explore-header .page-subtitle {
+        font-size: 1.1em;
+    }
+    .explore-content {
+        grid-template-columns: 1fr; /* Stack content and sidebar */
+        gap: 30px;
+    }
+    .post-masonry-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    .suggested-topics {
+        position: static; /* Remove sticky behavior on smaller screens */
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .explore-page-main {
+        padding-top: 20px;
+        gap: 30px;
+    }
+    .explore-header {
+        padding: 2rem 1rem;
+        margin-bottom: 10px;
+    }
+    .explore-header .page-title {
+        font-size: 2em;
+    }
+    .explore-header .page-subtitle {
+        font-size: 1em;
+        margin-bottom: 1.5em;
+    }
+    .tag-filter-container {
+        gap: 8px;
+    }
+    .tag-button {
+        padding: 0.5em 1em;
+        font-size: 0.85em;
+    }
+    .explore-content {
+        gap: 20px;
+    }
+    .post-masonry-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+    .explore-card .post-info {
+        padding: 1rem;
+    }
+    .explore-card h3 {
+        font-size: 1.2em;
+    }
+    .explore-card .post-meta {
+        font-size: 0.85em;
+    }
+    .explore-card .post-excerpt {
+        font-size: 0.9em;
+    }
+    .explore-card .read-more-btn {
+        font-size: 0.85em;
+        padding: 0.5em 0.8em;
+    }
+    .suggested-topics h2 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+    .suggested-tags .tag-pill {
+        padding: 0.6em 1em;
+        font-size: 0.8em;
+    }
+}
