@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Title - Blog Nebula</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reader.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="navbar-container">
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">Blog Nebula</a></div>
+            <ul class="nav-links">
+                <li><a href="explore.html" class="nav-link">Explore</a></li>
+                <li><a href="create.html" class="nav-link">Create</a></li>
+                <li><a href="profile.html" class="nav-link">Profile</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="icon-button" aria-label="Toggle theme">
+                    <i class="fas fa-moon light-icon"></i>
+                    <i class="fas fa-sun dark-icon"></i>
+                </button>
+                <a href="login.html" class="btn btn-primary">Sign In</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="reader-page-main">
+        <article class="blog-post">
+            <div class="cover-image-container">
+                <img src="https://images.unsplash.com/photo-1542646279-bbdf1129b8ec?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bioluminescent Forest Cover" class="cover-image">
+                <div class="cover-overlay">
+                    <div class="post-header-info">
+                        <h1 class="post-title">The Enchanting World of Bioluminescent Forests</h1>
+                        <p class="post-meta-hero">
+                            <img src="https://i.pravatar.cc/50?img=18" alt="Author Avatar" class="author-avatar-lg">
+                            <span class="author-name">Seraphina Lumen</span> <span class="separator">•</span>
+                            <span class="post-date">October 26, 2023</span> <span class="separator">•</span>
+                            <span class="reading-time">10 min read</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-body-container glassmorphism-card">
+                <div class="post-actions-floating">
+                    <button class="icon-button bookmark-btn" title="Bookmark"><i class="far fa-bookmark"></i></button>
+                    <button class="icon-button share-btn" title="Share"><i class="fas fa-share-alt"></i></button>
+                    <button class="icon-button like-btn" title="Like"><i class="far fa-heart"></i> <span>1.2K</span></button>
+                </div>
+                <div class="post-content markdown-content">
+                    <p>In the quiet depths of certain ancient forests, where sunlight rarely touches the forest floor, a magical phenomenon unfolds after dusk: bioluminescence. Like scattered stardust, glowing fungi illuminate the undergrowth, painting a surreal, ethereal landscape that seems to belong more to a fantasy realm than our own.</p>
+
+                    <h2>The Science Behind the Glow</h2>
+                    <p>Bioluminescence, the production and emission of light by a living organism, is a common marvel in the deep ocean, but on land, it is primarily observed in fungi and insects like fireflies. For fungi, this glow is often a byproduct of metabolic processes, specifically the oxidation of a compound called luciferin, catalyzed by the enzyme luciferase.</p>
+                    <p>While the exact evolutionary advantage of fungal bioluminescence is still debated, leading theories suggest it might attract insects, which then aid in spore dispersal. Imagine an insect, drawn by the gentle glow, unwittingly picking up spores and carrying them to new territories, ensuring the fungi's propagation.</p>
+
+                    <h3>Where to Find These Luminous Wonders</h3>
+                    <ul>
+                        <li><strong>Brazil's Atlantic Forest:</strong> Home to several glowing species, including the famous <em>Mycena chlorophos</em>.</li>
+                        <li><strong>Japan's Forests:</strong> Particularly during the rainy season, you can find glowing mushrooms like the "Ghost Mushroom."</li>
+                        <li><strong>North America:</strong> The Jack O'Lantern mushroom (<em>Omphalotus illudens</em>) is a common bioluminescent species, though its glow is often faint and requires dark adaptation to see.</li>
+                    </ul>
+                    <img src="https://images.unsplash.com/photo-1542646279-bbdf1129b8ec?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bioluminescent Forest" class="content-image">
+                    <p>Experiencing a bioluminescent forest is truly a spectacle. It's a reminder of the hidden wonders of our natural world, urging us to step away from artificial lights and reconnect with the subtle, enchanting beauty that nature has to offer.</p>
+                    <p>So next time you're in a dense, humid forest, especially after a good rain, linger a little longer as twilight falls. You might just catch a glimpse of nature's own silent, luminous symphony.</p>
+                </div>
+
+                <div class="post-tags">
+                    <span class="tag-pill">#Nature</span>
+                    <span class="tag-pill">#Science</span>
+                    <span class="tag-pill">#Exploration</span>
+                    <span class="tag-pill">#Bioluminescence</span>
+                </div>
+            </div>
+
+            <section class="comment-section glassmorphism-card">
+                <h2>Comments (3)</h2>
+                <div class="comment-input">
+                    <img src="https://i.pravatar.cc/40?img=19" alt="User Avatar" class="comment-user-avatar">
+                    <textarea placeholder="Write a comment..." class="input-field comment-textarea"></textarea>
+                    <button class="btn btn-primary comment-submit-btn">Post Comment</button>
+                </div>
+                <div class="comments-list">
+                    <div class="comment-item">
+                        <img src="https://i.pravatar.cc/40?img=20" alt="Commenter Avatar" class="comment-avatar">
+                        <div class="comment-content">
+                            <span class="comment-author">LunaExplorer</span> <span class="comment-date">2 days ago</span>
+                            <p>Absolutely mesmerizing! I've always dreamed of witnessing this. Great article!</p>
+                            <div class="comment-actions">
+                                <button><i class="far fa-heart"></i> 5</button>
+                                <button>Reply</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-item">
+                        <img src="https://i.pravatar.cc/40?img=21" alt="Commenter Avatar" class="comment-avatar">
+                        <div class="comment-content">
+                            <span class="comment-author">NatureLover</span> <span class="comment-date">1 day ago</span>
+                            <p>Fascinating insights into the why and how. The evolutionary advantage theory makes so much sense!</p>
+                            <div class="comment-actions">
+                                <button><i class="far fa-heart"></i> 2</button>
+                                <button>Reply</button>
+                            </div>
+                            <div class="replies">
+                                <div class="comment-item reply">
+                                    <img src="https://i.pravatar.cc/40?img=22" alt="Commenter Avatar" class="comment-avatar">
+                                    <div class="comment-content">
+                                        <span class="comment-author">WildLifeGeek</span> <span class="comment-date">1 day ago</span>
+                                        <p>Indeed! And it's not just fungi; some marine organisms use bioluminescence for defense or communication.</p>
+                                        <div class="comment-actions">
+                                            <button><i class="far fa-heart"></i> 1</button>
+                                            <button>Reply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="related-articles-section">
+                <h2>Related Articles</h2>
+                <div class="related-articles-carousel">
+                    <!-- Example Related Post Cards -->
+                    <a href="reader.html" class="post-card glassmorphism-card related-card reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1541829037-c104e12e75e9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Deep Sea Creatures" class="post-thumbnail">
+                        <div class="post-info">
+                            <h3>Mysteries of the Deep Sea: Creatures of Light</h3>
+                            <p class="post-meta">
+                                <img src="https://i.pravatar.cc/30?img=23" alt="Author Avatar" class="author-avatar">
+                                Oceanography <span class="separator">•</span> 9 min read
+                            </p>
+                        </div>
+                    </a>
+                    <a href="reader.html" class="post-card glassmorphism-card related-card reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1510414902264-77a80b03f0b2?q=80&w=2823&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Low Light Photography" class="post-thumbnail">
+                        <div class="post-info">
+                            <h3>Photography Tips for Low-Light Nature Shots</h3>
+                            <p class="post-meta">
+                                <img src="https://i.pravatar.cc/30?img=24" alt="Author Avatar" class="author-avatar">
+                                PhotoPro <span class="separator">•</span> 7 min read
+                            </p>
+                        </div>
+                    </a>
+                    <a href="reader.html" class="post-card glassmorphism-card related-card reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1596200213076-2f31a28a3f8f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Role of Fungi" class="post-thumbnail">
+                        <div class="post-info">
+                            <h3>The Role of Fungi in Forest Ecosystems</h3>
+                            <p class="post-meta">
+                                <img src="https://i.pravatar.cc/30?img=25" alt="Author Avatar" class="author-avatar">
+                                MycologyFan <span class="separator">•</span> 11 min read
+                            </p>
+                        </div>
+                    </a>
+                    <a href="reader.html" class="post-card glassmorphism-card related-card reveal-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1502691238466-9e6e4a2877a5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ethical Wildlife Observation" class="post-thumbnail">
+                        <div class="post-info">
+                            <h3>A Guide to Ethical Wildlife Observation</h3>
+                            <p class="post-meta">
+                                <img src="https://i.pravatar.cc/30?img=26" alt="Author Avatar" class="author-avatar">
+                                EcoGuardian <span class="separator">•</span> 6 min read
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+    <script src="reader.js"></script>
+</body>
+</html>
